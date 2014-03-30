@@ -10,6 +10,25 @@ body {
 
 }
 
+a:active{
+
+}
+
+a:hover{
+ text-decoration:none;
+}
+
+a:visited{
+ color:black;
+ text-decoration:none;
+}
+
+a:link{
+ text-decoration:none;
+}
+
+
+
 /*Clearfix*/
 .clearfix:before,
 .clearfix:after {
@@ -43,15 +62,19 @@ background:#99c;
     background:white;
     float:left;
     position:fixed;
-    width:5em;
-    padding:1em;
+    text-align:left;
+    width:7em;
+    padding:0 px;
     height:100%;
     overflow: hidden;
+    margin-right:3em;
 
 }
 
-.column1 ul li{
+.column1 li{
     list-style:none;
+    margin-right:1em;
+    line-height: 2em;
 }
 
 /*CONTAINER*/
@@ -59,25 +82,28 @@ background:#99c;
     background:white;
     float:left;
     width:35em;
-    padding:1em;
-    margin-left:8em;
+    padding:3em;
+    margin-left:7.4em;
     border-left:1px solid #999;
 }
+
 .column2 {
 
 }
-a:hover{
+    a:link{
+        color:black;
+    }
 
-}
-a:visited{
+    a:visited{
 
-}
-a:link{
- color:black;
-}
-a:link nth-child(3){
-    color:red;
-}
+    }
+    a:hover{
+
+    }
+
+    a:nth-child(4){
+        color:red;
+    }
 
 
 
@@ -89,31 +115,80 @@ a:link nth-child(3){
     padding:3.2em;
     margin-left:1em;
     border-left: 1px solid #999;
-    border-right:1px solid #999;
+    color:#777;
+
 
 }
 
+.navigation a:link{
+    text-decoration:none;
+    color:#999;
+}
 
 /*NAV*/
-#navigation{
+.navigation{
     background-color:white;
+    font-color:green;
     float:left;
+    border-left:1px solid #999;
+    height:100%;
     text-align:right;
     padding:5px 10px;
     width:5em;
     position:fixed;
     margin-left: 72.8em;
+    position: -webkit-sticky;  
+    right: 0;  
+    z-index: 1; 
     
-
 }
 
-#navigation ul {
-    margin:0;
+.navigation ul {
+    margin-right:1em;
     padding:0;
     list-style:none;
     }
-#navigation li {
+.navigation li {
     display:inline;
     margin:0;
     padding:0;
+    line-height: 2em;
+    font-size: .9em;
+    font-family: 'proxima-nova','Helvetica','Avenir','Arial',sans-serif;;
+    color:#999;
+
     }
+
+.navigation li:nth-child(7) {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 2em;
+    
+    }
+
+.navigation a:active{
+    
+}
+
+.navigation a:hover{
+     text-decoration:none;
+      color:#000;
+}
+
+.navigation a:visited{
+     color:black;
+     text-decoration:none;
+}
+
+.navigation a:link{
+     text-decoration:none;
+    color:#999;
+}
+
+
+
+
+
+
+
+
